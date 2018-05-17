@@ -1,0 +1,40 @@
+{
+  "name": "cuisinier",
+  "version": "0.0.0",
+  "description": "a JSON transformer that does type checking too",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "prebuild": "rm -rf lib",
+    "build": "tsc",
+    "postbuild": "./postbuild.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UrbanDoor/cuisinier.git"
+  },
+  "author": "Wil Lee <kourge@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UrbanDoor/cuisinier/issues"
+  },
+  "homepage": "https://github.com/UrbanDoor/cuisinier#readme",
+  "devDependencies": {
+    "@types/jest": "^22.2.3",
+    "jest": "^22.4.3",
+    "ts-jest": "^22.4.6",
+    "typescript": "^2.8.3"
+  },
+  "dependencies": {
+    "invokable": "^1.0.2",
+    "moment": "^2.22.1",
+    "typescript-string-enums": "^0.3.5"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testMatch": ["<rootDir>/src/**/*.spec.[tj]s?(x)"],
+    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
+  }
+}
