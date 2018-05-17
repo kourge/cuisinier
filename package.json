@@ -1,6 +1,6 @@
 {
   "name": "cuisinier",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "a JSON transformer that does type checking too",
   "main": "index.js",
   "scripts": {
@@ -34,7 +34,16 @@
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
     },
-    "testMatch": ["<rootDir>/src/**/*.spec.[tj]s?(x)"],
-    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
+    "testMatch": [
+      "<rootDir>/src/**/*.spec.[tj]s?(x)"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
   }
 }
