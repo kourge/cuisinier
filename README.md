@@ -164,6 +164,8 @@ interface ReminderItem {
 First, we need to write a custom timestamp validator:
 
 ```js
+// In `validators.js`:
+
 import {number} from 'cuisinier/validators';
 
 export function timestamp(value) {
@@ -176,8 +178,13 @@ export function timestamp(value) {
 Then, we can write our model:
 
 ```js
+// In some other file:
+
 import {model, fieldFromSnake as f} from 'cuisinier';
 import {string} from 'cuisinier/validators';
+
+// The custom validator written earlier:
+import {timestamp} from './validators';
 
 export const ReminderItem = model('ReminderItem', {
   id: f(string),
