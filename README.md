@@ -283,7 +283,7 @@ TypeScript. One additional feature in TypeScript is that you can derive a static
 type from a model:
 
 ```ts
-import {model, f} from 'cuisinier';
+import {model, field as f} from 'cuisinier';
 import {optional} from 'cuisinier/validator';
 import {string, number} from 'cuisinier/validators';
 
